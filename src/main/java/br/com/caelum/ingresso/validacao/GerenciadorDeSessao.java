@@ -33,7 +33,7 @@ public class GerenciadorDeSessao {
 		if (ehAntes) {
 			return sessaoAtual.getHorarioTermino().isBefore(horarioSessao);
 		} else {
-			return sessaoExistente.getHorario().isBefore(horarioAtual);
+			return sessaoExistente.getHorarioTermino().isBefore(horarioAtual);
 		}
 	}
 }
