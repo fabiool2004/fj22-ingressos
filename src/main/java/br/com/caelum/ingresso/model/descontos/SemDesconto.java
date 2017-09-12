@@ -10,4 +10,9 @@ public class SemDesconto implements Desconto{
 	public BigDecimal Aplica (BigDecimal valorOriginal) {
 		return valorOriginal;
 	}
+	
+	@Override
+	public String getDescricao() {
+		return "Normal";
+	}
 }

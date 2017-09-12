@@ -6,10 +6,15 @@ import br.com.caelum.ingresso.model.Desconto;
 
 public class DescontoEstudante implements Desconto{
 
-		private BigDecimal desconto = new BigDecimal("2.0");
+	private BigDecimal desconto = new BigDecimal("2.0");
 		
-		@Override
-		public BigDecimal Aplica (BigDecimal valorOriginal) {
-			return valorOriginal.divide(desconto);
-		}
+	@Override
+	public BigDecimal Aplica (BigDecimal valorOriginal) {
+		return valorOriginal.divide(desconto);
+	}
+		
+	@Override
+	public String getDescricao() {
+		return "Estudante";
+	}
 }
